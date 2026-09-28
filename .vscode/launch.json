@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug-entry-point",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/hello",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "preLaunchTask": "build-main"
+        },
+        {
+            "name": "Debug-tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test_all",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "preLaunchTask": "build-tests"
+        }
+    ]
+}
